@@ -58,7 +58,7 @@ setInterval(() => {
   clients.forEach(socket => socket.emit("sensorData", sensorData));
 
   console.log("Sending:", sensorData);
-}, 2); // ส่งทุก 2 วินาที
+}, 2000); // ส่งทุก 2 วินาที
 
 server.listen(3000, () => {
   console.log("Simulation Server running on port 3000");
